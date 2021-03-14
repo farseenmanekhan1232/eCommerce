@@ -1,7 +1,7 @@
 import React from 'react';
 import './menu-item.component.scss';
 
-const MenuItem = ({title , imageUrl , size , linkUrl , history , match}) =>{
+const MenuItem = ({title , imageUrl , size }) =>{
     return(
         <div className={`menu-item ${size}`} >
             <div className='background-image'
