@@ -1,5 +1,4 @@
 import React from 'react';
-import MenuItem from '../menu-item/menu-item.component';
 
 const CollectionPreview=( {title , items})=>{
     return(
@@ -8,8 +7,12 @@ const CollectionPreview=( {title , items})=>{
         {`${title}`}
         </h1>
         <div>
-        {items.map((item)=>{
-            return(<MenuItem title={item.name} classname={"collection-preview"}/>);
+        {items.filter((item , ind)=>ind<4).map((item)=>{
+            return(
+                <div>
+                {item.name}
+                </div>
+            );
         })}
         </div>
         </div>
